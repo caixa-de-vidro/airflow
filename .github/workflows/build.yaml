@@ -25,7 +25,6 @@ jobs:
           password: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Build & Push
-        working-directory: airflow
         run: make push
         env:
           GHCR_USER: ${{ github.actor }}
