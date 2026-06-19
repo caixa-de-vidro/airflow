@@ -24,5 +24,5 @@ login:
 run: login
 	docker run --rm -p 8081:8080 $(IMAGE):$(TAG) standalone
 
-push: login
+push: login build
 	docker push $(IMAGE):$(TAG)
