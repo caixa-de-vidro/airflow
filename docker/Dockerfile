@@ -6,6 +6,7 @@ RUN pip install --no-cache-dir \
     "apache-airflow==${AIRFLOW_VERSION}" \
     "apache-airflow-providers-cncf-kubernetes" \
     "apache-airflow-providers-fab" \
+    "apache-airflow-providers-amazon" \
     "apache-airflow-providers-postgres" \
     --constraint "${HOME}/constraints.txt"
 
